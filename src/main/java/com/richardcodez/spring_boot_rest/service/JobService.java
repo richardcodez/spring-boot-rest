@@ -21,6 +21,7 @@ public class JobService {
     }
 
     public List<JobPost> getAllJobs(){
+//        int num = 10/0;     // intended error to see @AfterThrowing an error loggingAspect
         return repo.findAll();
     }
 
